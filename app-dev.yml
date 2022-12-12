@@ -1,0 +1,60 @@
+apps:
+    -
+      name: document-converter
+      restart_delay: 100
+      script: uvicorn src.document_converter.app:app --port 4041
+      autorestart: true
+
+    -
+      name: file-converter
+      restart_delay: 100
+      script: uvicorn src.file_converter.app:app --port 4042
+      autorestart: true
+
+    -
+      name: image-converter
+      restart_delay: 100
+      script: uvicorn src.image_converter.app:app --port 4043
+      autorestart: true
+
+    -
+      name: video-converter
+      restart_delay: 100
+      script: uvicorn src.video_converter.app:app --port 4044
+      autorestart: true
+
+    -
+      name: audio-converter
+      restart_delay: 100
+      script: uvicorn src.audio_converter.app:app --port 4045
+      autorestart: true
+
+    -
+      name: fake-text-generator
+      restart_delay: 100
+      script: uvicorn src.fake_text_generator.app:app --port 4046
+      autorestart: true
+
+    -
+      name: paragraph-checker
+      restart_delay: 100
+      script: uvicorn src.paragraph_checker.app:app --port 4047
+      autorestart: true
+
+    -
+      name: tweet-to-image-genarate
+      restart_delay: 100
+      script: uvicorn src.twitter.app:app --port 4048
+      autorestart: true
+
+    -
+      name: watermark_adder
+      restart_delay: 100
+      script: uvicorn src.watermark.app:app --port 4049
+      autorestart: true.
+
+    -
+      name: convert_user
+      restart_delay: 100
+      script: uvicorn src.convert_user.app:app --port 4050
+      autorestart: true

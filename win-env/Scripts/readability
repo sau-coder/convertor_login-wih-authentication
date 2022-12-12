@@ -1,0 +1,3 @@
+#!c:\users\hani1\desktop\practicea\win-env\scripts\python.exe
+import readability
+readability.main()
